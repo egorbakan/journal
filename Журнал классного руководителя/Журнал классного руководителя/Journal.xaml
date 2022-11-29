@@ -1,0 +1,34 @@
+﻿<Window x:Class="Журнал_классного_руководителя.Journal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Журнал_классного_руководителя"
+        mc:Ignorable="d"
+        Title="Journal" Height="700" Width="1100">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="White" Offset="0"/>
+                <GradientStop Color="#FF01A3D2" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Menu HorizontalAlignment="Left" Height="669" VerticalAlignment="Top" Width="257" Background="White"/>
+        <ComboBox HorizontalAlignment="Left" Margin="41,51,0,0" VerticalAlignment="Top" Width="144" FontSize="14" Height="38">
+            <ComboBoxItem>101</ComboBoxItem>
+            <ComboBoxItem>201</ComboBoxItem>
+        </ComboBox>
+        <Label Content="Номер группы" HorizontalAlignment="Left" Margin="41,14,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Button Content="Расписание" HorizontalAlignment="Left" Height="57" Margin="41,112,0,0" VerticalAlignment="Top" Width="151" FontSize="24" Click="Button_Click"/>
+        <Button Content="Журнал" HorizontalAlignment="Left" Height="57" Margin="41,184,0,0" VerticalAlignment="Top" Width="152" FontSize="24"/>
+        <Button Content="Соц. паспорт" HorizontalAlignment="Left" Height="57" Margin="41,256,0,0" VerticalAlignment="Top" Width="152" FontSize="24" Click="Button_Click_1"/>
+        <Button Content="Успеваемость" HorizontalAlignment="Left" Height="57" Margin="40,329,0,0" VerticalAlignment="Top" Width="152" FontSize="22"/>
+        <Button Content="Пропуски" HorizontalAlignment="Left" Height="57" Margin="41,407,0,0" VerticalAlignment="Top" Width="152" FontSize="22"/>
+        <ComboBox HorizontalAlignment="Left" Margin="41,535,0,0" VerticalAlignment="Top" Width="144" FontSize="14" Height="38">
+            <ComboBoxItem>План воспитательной работы</ComboBoxItem>
+            <ComboBoxItem>Заметки</ComboBoxItem>
+            <ComboBoxItem>Напоминания</ComboBoxItem>
+        </ComboBox>
+        <Label Content="Дополнительно" HorizontalAlignment="Left" Margin="41,493,0,0" VerticalAlignment="Top" FontSize="20"/>
+    </Grid>
+</Window>
